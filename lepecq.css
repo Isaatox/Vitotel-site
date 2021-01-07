@@ -22,11 +22,6 @@ margin-right:10ex;
 
 /* MENU NAVIGATION */
 
-#logo{
-    text-align: left;
-     padding-top: 30px;
-    }
-
 *{
     padding: 0px;
     margin: 0px;
@@ -244,5 +239,12 @@ margin:8px 5px 0px 0px;
 }
 
 
+/* expositions*/
 
+td{
+    text-align: center;
+}
 
+.solid{
+    background-color: peru;
+}
