@@ -22,6 +22,11 @@ margin-right:10ex;
 
 /* MENU NAVIGATION */
 
+#logo{
+    text-align: left;
+     padding-top: 30px;
+    }
+
 *{
     padding: 0px;
     margin: 0px;
@@ -237,3 +242,7 @@ float:right;
 border:0 none gray;
 margin:8px 5px 0px 0px;
 }
+
+
+
+
