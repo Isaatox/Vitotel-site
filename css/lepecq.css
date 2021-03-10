@@ -12,6 +12,8 @@ font-weight:normal;
 font-size:1.1em;
 }
 
+
+
 #corps
 {
 margin-left:10ex;
@@ -160,6 +162,7 @@ color:#ffffcc;
 p
 {
 text-align:justify;
+color: rgb(223, 223, 223);
 }
 
 
