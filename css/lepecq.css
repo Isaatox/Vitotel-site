@@ -1,0 +1,489 @@
+/*
+site : Par Damien, Hugo, Clément
+date : 2021
+*/
+
+body
+{
+color:#ff7241;
+text-align:center;
+font-family: Georgia, Futura, Verdana, Lucida, Helvetica, Arial, sans-serif;
+font-weight:normal;
+font-size:1.1em;
+}
+
+#corps
+{
+margin-left:10ex;
+margin-right:10ex;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+}
+
+/* MENU NAVIGATION */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: orange;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 220px;
+    z-index: 1;
+  }
+  
+  /* Mega Menu header, if needed */
+  .dropdown-content .header {
+    background: red;
+    padding: 27px;
+    color: white;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: rgba(255, 204, 51,0.9);
+    height: 170px;
+    box-shadow: 10px 5px 5px gray;
+    opacity: 1;
+  }
+  
+  /* Style links inside the columns */
+  .column a {
+    float: none;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-width: 10px;
+    margin-top: auto;
+  }
+  
+  /* Add a background color on hover */
+  .column a:hover {
+    background-color: red;
+    color: orange;
+    ;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* FIN DU MENU NAVIGATION */ 
+
+h1
+{
+font-size:1.8em;
+}
+
+h2
+{
+font-size:1.4em;
+}
+
+h3
+{
+font-size:1.3em;
+text-align:right;
+color:#6080ED;
+border-bottom:1px solid #6080ED;
+font-style:italic;
+}
+
+h3 em
+{
+font-style:normal;
+background-color:#6080ED;
+color:#ffffcc;
+}
+
+p
+{
+text-align:justify;
+}
+
+
+acronym
+{
+cursor:help;
+}
+
+blockquote
+{
+border:1px dashed #a52a2a;
+padding:0.25em;
+background-color:#f2d0d0;
+color:#000066;
+text-align:justify;
+text-indent:1.5em;
+font-style:italic;
+}
+
+blockquote span.italique
+{
+font-style:normal;
+}
+
+blockquote span.underline
+{
+text-decoration: underline;
+}
+
+blockquote span.bold
+{
+font-weight: bold;
+}
+
+cite
+{
+font-style:italic;
+color:#000066;
+}
+
+table
+{
+margin-left:auto;
+margin-right:auto;
+}
+
+#corps table.image
+{
+border:1px dashed #4797ED;
+background-color:#CADBED;
+padding:0.1em;
+}
+
+#corps table.image p
+{
+color:#5571c6;
+font-size:0.8em;
+text-align:center;
+margin:0;
+}
+
+span.marron
+{
+color:#a52a2a;
+}
+
+.carte
+{
+text-align: center;
+width: 400px;
+border:1px solid #4dbfff;
+background-color:#a6ddff;
+color:#3684b3;
+margin: auto;
+}
+
+#Index #nav-Index a, #Camille #nav-Camille a, #Simone #nav-Simone a, #Janine #nav-Janine a, #Denise #nav-Denise a, #Louis #nav-Louis a, #Genevieve #nav-Genevieve a
+{
+background-color:#D3E3F3;
+border:1px solid #336699;
+}
+
+#signature
+{
+color:black;
+font-size:small;
+border-top:2px dotted #ffc700;
+}
+
+#signature p
+{
+margin-left:0ex;
+}
+
+#signature img
+{
+float:right;
+border:0 none gray;
+margin:8px 5px 0px 0px;
+}
+
+.phot{
+  border: 0px solid;
+  width: 248px;
+  height: 400px;
+}
+
+.text{
+  font-weight: bold;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h4{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:60px;
+	margin-left:40px;
+  
+}
+
+
+header
+{
+  width: 100%;
+  height: 50%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  z-index: -1;
+}
+
+section
+{
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  z-index: -1;
+}
+
+.button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 7%;
+  margin-left: 90%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
