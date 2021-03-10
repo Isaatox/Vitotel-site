@@ -1,0 +1,86 @@
+/* MENU NAVIGATION */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+}
+
+.nav .menu-bar{
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(2, 2, 2, 0.2);
+}
+
+.menu-bar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    margin: 0px 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-bar li:hover{
+    background: #cec65f;
+    color: white;
+}
+
+a
+{
+text-decoration:none;
+color:#f5a700;
+border-bottom:1px #5b5c5e;
+}
+
+a:hover, a:active
+{
+color:#ffffcc;
+background-color:#d7ed5ea6;
+}
+
+/* FIN DU MENU NAVIGATION */ 
+
+body{
+background-color:#ffffcc;
+color: black;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: left;
+}
+p{
+    color: rgb(93, 27, 216);
+    margin-left:20px;
+    margin-right:15px;
+}
+
+li {
+    margin-left: 70px;
+}
+
+h1{
+    margin-left: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p+ul{
+    margin-left: 70px;
+}
+.solid{
+    color: black;
+    margin-left: 10px;
+}
+.liquid {
+    text-align: right;
+    color: black;
+}
