@@ -34,14 +34,12 @@ margin-right:10ex;
     box-sizing: border-box;
 }
 
-/* Navbar container */
 .navbar {
     overflow: hidden;
     background-color: orange;
     font-family: Arial;
   }
   
-  /* Links inside the navbar */
   .navbar a {
     float: left;
     font-size: 17px;
@@ -51,13 +49,11 @@ margin-right:10ex;
     text-decoration: none;
   }
   
-  /* The dropdown container */
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Dropdown button */
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -65,16 +61,13 @@ margin-right:10ex;
     color: white;
     padding: 16px 16px;
     background-color: inherit;
-    font: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
+    font: inherit;
+    margin: 0;}
   
-  /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
   }
   
-  /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -83,19 +76,16 @@ margin-right:10ex;
     z-index: 1;
   }
   
-  /* Mega Menu header, if needed */
   .dropdown-content .header {
     background: red;
     padding: 27px;
     color: white;
   }
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
-  /* Create three equal columns that floats next to each other */
   .column {
     float: left;
     width: 33.33%;
@@ -106,7 +96,6 @@ margin-right:10ex;
     opacity: 1;
   }
   
-  /* Style links inside the columns */
   .column a {
     float: none;
     color: black;
@@ -117,14 +106,12 @@ margin-right:10ex;
     margin-top: auto;
   }
   
-  /* Add a background color on hover */
   .column a:hover {
     background-color: red;
     color: orange;
     ;
   }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
@@ -279,17 +266,15 @@ margin:8px 5px 0px 0px;
   float: left;
   width: 20%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -379,7 +364,7 @@ height:100%;
 
 
 .button {
-  background-color: orange; /* Green */
+  background-color: orange;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -390,7 +375,7 @@ height:100%;
   margin-top: 7%;
   margin-left: 90%;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -408,7 +393,6 @@ p {
   box-sizing: border-box;
 }
 
-/* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -439,29 +423,26 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Style the container/contact section */
 .container2 {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
 .column2 {
+  position:sticky;
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
 }
 
-/* Clear floats after the columns */
 .row2:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
@@ -479,4 +460,115 @@ input[type=submit]:hover {
 
 #container:hover{
   box-shadow:0px 0px 15px #333;
+}
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(124, 124, 124);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(216, 104, 39);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(216, 104, 39) transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: rgba(119, 119, 119, 0.644);
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
 }
